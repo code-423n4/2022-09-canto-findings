@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "ch13fd357r0y3r",
+  "address": "0xba23dfd7cccd3587a1b8909dd5bccfd92aceae6f",
+  "risk": "3",
+  "title": "Create Same token pair by altering the Stable parameter",
+  "issueId": 6,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/6"
+}
