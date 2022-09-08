@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "simon135",
+  "address": "0x7bfbabda21beebb17e284901bfc41e942f8128c8",
+  "risk": "3",
+  "title": "price of underlying token will be missrepesented  with `getUnderlyingPrice` because of using `wcanto token` on `getPriceNote` and doing compuation on it ",
+  "issueId": 19,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/19"
+}
