@@ -35,4 +35,8 @@ https://ethereum.stackexchange.com/questions/108033/what-do-i-need-to-be-careful
 It is good to add a require() statement that checks the return value of token transfers or to use something like OpenZeppelin’s safeTransfer/safeTransferFrom unless one is sure the given token reverts in case of a failure. Failure to do so will cause silent failures of transfers and affect token accounting in contract.
 https://github.com/code-423n4/2022-09-canto/blob/main/src/Swap/BaseV1-periphery.sol#L475
 Recommended Mitigation Steps
-Consider using safeTransfer/safeTransferFrom or require() consistently.
+Consider using safeTransfer/safeTransferFrom or require() consistently
+#4 RETURN VALUES OF TRANSFER()/TRANSFERFROM() NOT CHECKED 
+Not all IERC20 implementations revert() when there’s a failure in transfer()/transferFrom(). The function signature has a boolean return value and they indicate errors that way instead. By not checking the return value, operations that should have marked as failed, may potentially go through without actually making a payment
+https://github.com/code-423n4/2022-09-canto/blob/main/src/Swap/BaseV1-periphery.sol#L475
+
