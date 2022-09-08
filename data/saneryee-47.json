@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "saneryee",
+  "address": "0x8165636930a7020f4106c9a153463626a4d9bda2",
+  "risk": "3",
+  "title": "There is no limit to the value of blockTimestampLast, which may cause abnormal results of the _update function.",
+  "issueId": 47,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/47"
+}
