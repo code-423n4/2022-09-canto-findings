@@ -11,6 +11,15 @@
 
 In the `getUnderlyingPrice` method it can be seen how multiple comparisons are made by the contract symbol, (which by the way does not appear as an [external calls](https://github.com/code-423n4/2022-09-canto/blob/main/README.md#external-calls) in the readme, and it is), instead of being compared by the address of the expected token itself. Keep in mind that this value can be easily falsified and is not reliable, so the result of these comparisons cannot be trusted either.
 
+For example, the symbol can be "cUSDT", and the `underlying` can be WETH.
+
+```javascript
+        else if (compareStrings(symbol, "cUSDT") && (msg.sender == Comptroller )) {
+            uint decimals = erc20(underlying).decimals();
+            return 1e18 * 1e18 / (10 ** decimals); //Scale Price as a mantissa to maintain precision in comptroller
+        } 
+```
+
 **Affected source code:**
 
 - [BaseV1-periphery.sol:491-496](https://github.com/code-423n4/2022-09-canto/blob/65fbb8b9de22cf8f8f3d742b38b4be41ee35c468/src/Swap/BaseV1-periphery.sol#L491-L496)
