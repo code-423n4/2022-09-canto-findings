@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "BipinSah",
+  "address": "0xa1b583de26ec7c68e1c88747e517655ec8ea3e19",
+  "risk": "2",
+  "title": "Unbounded loop on array can lead to DoS",
+  "issueId": 157,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/157"
+}
