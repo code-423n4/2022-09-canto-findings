@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "rvierdiiev",
+  "address": "0x1a5adee23ffbdef58d41c1addac2521ca600b950",
+  "risk": "3",
+  "title": "The price can be calculated using old cumulative prices.",
+  "issueId": 78,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/78"
+}
