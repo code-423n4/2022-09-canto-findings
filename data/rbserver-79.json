@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "rbserver",
+  "address": "0x4bd9605a3e546f3400df2c2be7b1c775aeea56bd",
+  "risk": "2",
+  "title": "For a pair, the Observation added for the first time that _update is executed after createPair is called and the first periodSize time is passed has reserve0Cumulative, reserve1Cumulative, and totalSupplyCumulative all being 0, which is like the very first Observation that is initialized in the constructor",
+  "issueId": 79,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/79"
+}
