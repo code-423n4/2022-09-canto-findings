@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "Respx",
+  "address": "0x006949f2f1b70d35afda9ded6cb9f3e152fa031b",
+  "risk": "3",
+  "title": "Sudden price fluctuations occuring at a call to _update() will not be reflected by `reserves()`, `sampleReserves()` and `sampleSupply()` until after `periodSize` seconds",
+  "issueId": 96,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/96"
+}
