@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "0x52",
+  "address": "0x522dffc539c264a8f7e0b91102e899b33f4dabc3",
+  "risk": "2",
+  "title": "BaseV1-periphery.sol#getPriceCanto and getPriceNote can be problematic for low supply tokens",
+  "issueId": 23,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/23"
+}
