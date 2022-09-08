@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "ontofractal",
+  "address": "0x1295598076E1D67E09eF5e17ce364edd7F763dE0",
+  "risk": "3",
+  "title": "Draining of lending market assets via manipulation of token constants",
+  "issueId": 183,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/183"
+}
