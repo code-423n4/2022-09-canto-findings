@@ -22,6 +22,6 @@ Even though this is not going to affect legitimate lending markets, attacker can
 The internal function `BaseV1Router01._returnStableBooleans` isn't used and can be removed
 
 ## `getPriceLP()` assumes all pairs are created with NOTE/CANTO
-Filing this is QA since it seems from the docs that CANTO indeed doesn't intend to create other kinds of pairs
-However, it is worth verifying that in order to not cause errors for other users who may be using this oracle, or in case a stable pair was mistakenly created with CANTO or vice versa.
+Filing this is QA since it seems from the docs that CANTO indeed doesn't intend to create other kinds of pairs.
+However, it is possible to create pairs with none of them. So it is worth verifying that assumption in order to not cause errors for other users who may be using this oracle, or in case a stable pair was mistakenly created with CANTO or vice versa.
 Simply require that if `token0` isn't note/canto then the `token1` should be, and revert otherwise.
