@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "Waze",
+  "address": "0xb649642dee8e9e25b21cfc67da7dcf86828dd60d",
+  "risk": "2",
+  "title": "Failed transfer with low level call would not revert",
+  "issueId": 112,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/112"
+}
