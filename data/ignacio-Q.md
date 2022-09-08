@@ -23,6 +23,9 @@ The use of now creates a risk that time manipulation can be performed to manipul
 ## Recommended Mitigation Steps
 Use block.number instead of  block.timestamp or now to reduce the risk of
 MEV attacks 
+Block timestamps should not be used for entropy or generating random numbers—i.e., they should not be the deciding factor (either directly or through some derivation) for changing an important state.
+
+Time-sensitive logic is sometimes required; e.g., for unlocking contracts (time-locking), completing an ICO after a few weeks, or enforcing expiry dates. It is sometimes recommended to use block.number and an average block time to estimate times; with a 10 second block time, 1 week equates to approximately, 60480 blocks. Thus, specifying a block number at which to change a contract state can be more secure, as miners are unable to easily manipulate the block number.
 
 ### here some reference :
 https://www.bookstack.cn/read/ethereumbook-en/spilt.14.c2a6b48ca6e1e33c.md
