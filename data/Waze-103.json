@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "Waze",
+  "address": "0xb649642dee8e9e25b21cfc67da7dcf86828dd60d",
+  "risk": "2",
+  "title": " Use safetransfer/safetransferFrom consistently instead of transfer/transferFrom for ERC20",
+  "issueId": 103,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/103"
+}
