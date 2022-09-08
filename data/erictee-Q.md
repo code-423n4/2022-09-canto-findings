@@ -142,25 +142,11 @@ When changing state variables events are not emitted. Emitting events allows mon
 
 ./BaseV1-core.sol:L585             function setPause(bool _state) external {
 
-./BaseV1-core.sol:L610                 emit PairCreated(token0, token1, stable, pair, allPairs.length);
-
 ./BaseV1-periphery.sol:L89             function setAdmin(address admin_) external {
 
 ./BaseV1-periphery.sol:L478             function setStable(address underlying) external returns (uint) {
-
-./test/Token.sol:L55                 emit Approval(msg.sender, _spender, _value);
-
-./test/Token.sol:L72                 emit Approval(owner, spender, value);
-
-./test/Token.sol:L90                 emit Transfer(address(0x0), _to, _amount);
-
-./test/Token.sol:L101                 emit Transfer(_from, _to, _value);
-
-./test/Token.sol:L139                 emit Transfer(account, address(0), amount);
-
-./test/Token.sol:L148                 emit LogChangeVault(anyswapRouter, _pendingRouter, pendingRouterDelay);
-
 ```
+
 ### [L-07] Unsafe ERC20 Operation(s)
 
 
@@ -181,3 +167,13 @@ It is therefore recommended to always either use OpenZeppelin's SafeERC20 librar
 ./BaseV1-periphery.sol:L475        tokenCon.transferFrom(from, to, value);
 
 ```
+### [L-08] zero-address checks are missing
+
+
+#### Impact
+Zero-address checks are a best practice for input validation of critical address parameters. Accidental use of zero-addresses may result in exceptions, burn fees/tokens, or force redeployment of contracts.
+
+#### Findings:
+https://github.com/code-423n4/2022-09-canto/blob/main/src/Swap/BaseV1-core.sol#L557
+https://github.com/code-423n4/2022-09-canto/blob/main/src/Swap/BaseV1-core.sol#L577
+
