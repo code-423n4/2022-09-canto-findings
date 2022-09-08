@@ -57,6 +57,23 @@ You should change from `assert()` to `require()`
 
 `2022-09-canto/blob/main/src/Swap/BaseV1-periphery.sol#L428` [assert(wcanto.transfer(pairFor(routes[0].from, routes[0].to, routes[0].stable), amounts[0]));](https://github.com/code-423n4/2022-09-canto/blob/main/src/Swap/BaseV1-periphery.sol#L428)
 
+## ✅ L-4: Check zero denominator
+
+### 📝 Description
+
+When a division is computed, it must be ensured that the denominator is non-zero to prevent failure of the function call.
+
+### 💡 Recommendation
+
+You should change from `assert()` to `require()`
+
+### 🔍 Findings:
+https://github.com/code-423n4/2022-09-canto/blob/main/src/Swap/BaseV1-core.sol#L193
+https://github.com/code-423n4/2022-09-canto/blob/main/src/Swap/BaseV1-core.sol#L234
+https://github.com/code-423n4/2022-09-canto/blob/main/src/Swap/BaseV1-core.sol#L268
+https://github.com/code-423n4/2022-09-canto/blob/main/src/Swap/BaseV1-periphery.sol#L584
+
+
 ## ✅ N-1: Consider addings checks for signature malleability
 
 ### 📝 Description
