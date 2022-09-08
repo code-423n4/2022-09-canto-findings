@@ -1,8 +1,9 @@
 - [Low](#low)
     - [**1. It's safer compare by address**](#1-its-safer-compare-by-address)
     - [**2. Excessive gas consumption due to wrong definition**](#2-excessive-gas-consumption-due-to-wrong-definition)
+    - [**3. Outdated compiler**](#3-outdated-compiler)
 - [Non critical](#non-critical)
-    - [**3. Inaccurate comment**](#3-inaccurate-comment)
+    - [**4. Inaccurate comment**](#4-inaccurate-comment)
 
 # Low
 
@@ -106,12 +107,37 @@ The correct thing would be to create the high-cost variables after passing the a
         return _totalSupply;
     }
 ```
+## **3. Outdated compiler**
+
+The pragma version used is ```pragma solidity 0.8.11;```
+
+The minimum required version must be [0.8.16](https://github.com/ethereum/solidity/releases/tag/v0.8.16); otherwise, contracts will be affected by the following **important bug fixes**:
+
+[0.8.13](https://blog.soliditylang.org/2022/03/16/solidity-0.8.13-release-announcement/):
+- Code Generator: Correctly encode literals used in `abi.encodeCall` in place of fixed bytes arguments.
+
+[0.8.14](https://blog.soliditylang.org/2022/05/18/solidity-0.8.14-release-announcement/):
+
+- ABI Encoder: When ABI-encoding values from calldata that contain nested arrays, correctly validate the nested array length against `calldatasize()` in all cases.
+- Override Checker: Allow changing data location for parameters only when overriding external functions.
+
+[0.8.15](https://blog.soliditylang.org/2022/06/15/solidity-0.8.15-release-announcement/)
+
+- Code Generation: Avoid writing dirty bytes to storage when copying `bytes` arrays.
+- Yul Optimizer: Keep all memory side-effects of inline assembly blocks.
+
+[0.8.16](https://blog.soliditylang.org/2022/08/08/solidity-0.8.16-release-announcement/)
+
+- Code Generation: Fix data corruption that affected ABI-encoding of calldata values represented by tuples: structs at any nesting level; argument lists of external functions, events and errors; return value lists of external functions. The 32 leading bytes of the first dynamically-encoded value in the tuple would get zeroed when the last component contained a statically-encoded array.
+
+Apart from these, there are several minor bug fixes and improvements.
+
 
 ---
 
 # Non critical
 
-## **3. Inaccurate comment**
+## **4. Inaccurate comment**
 
 The comment says 30 minutes, this is the default value, it could be a different one defined by `setPeriodSize` function.
 
