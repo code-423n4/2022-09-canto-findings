@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "simon135",
+  "address": "0x7bfbabda21beebb17e284901bfc41e942f8128c8",
+  "risk": "2",
+  "title": "calulcation error if you use dai in `getunderlyingprice` as underlying for ctoken then you will get a inflated price because of the mulitplatacion of `getpricenote`  and `getPriceCanto`",
+  "issueId": 54,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/54"
+}
