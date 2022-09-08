@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "SinceJuly",
+  "address": "0xd4341b2e907c64c1ac113407611c712fd17363e1",
+  "risk": "2",
+  "title": "MISSING CHECK OF TOKEN RESULTING IN WRONG ANSWER OF LP TOKEN PRICE",
+  "issueId": 144,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/144"
+}
