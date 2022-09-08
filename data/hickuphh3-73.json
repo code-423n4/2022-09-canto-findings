@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "hickuphh3",
+  "address": "0xd5388291eabe96b56069440c97046791e2f72573",
+  "risk": "3",
+  "title": "Hardcoded USD pegs can be broken",
+  "issueId": 73,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/73"
+}
