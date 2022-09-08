@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "DimitarDimitrov",
+  "address": "0x6e8cd81029361d213b8d2d5b2d2064384618fd1f",
+  "risk": "3",
+  "title": "Should add check for Insufficient allowance",
+  "issueId": 90,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/90"
+}
