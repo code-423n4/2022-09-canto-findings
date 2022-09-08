@@ -1,0 +1,9 @@
+{
+  "contest": 159,
+  "handle": "0xA5DF",
+  "address": "0x04dfb55f65e89aaf26bf198ed87fb77a8a2b7260",
+  "risk": "2",
+  "title": "Oracle may be relying on a low reserves pair, which is easy to manipulate",
+  "issueId": 173,
+  "issueUrl": "https://github.com/code-423n4/2022-09-canto-findings/issues/173"
+}
